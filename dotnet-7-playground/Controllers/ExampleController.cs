@@ -15,7 +15,7 @@ namespace dotnet_7_playground.Controllers
             _db = db;
         }
 
-        [HttpGet("/")]
+        [HttpGet]
         public IActionResult GetAll()
         {
             var items = _db.Examples.ToList();
